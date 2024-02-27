@@ -4,7 +4,7 @@ import matplotlib.pyplot as plt
 import mplfinance as mpf
 
 # Fetch historical data for Tesla stock
-tesla = yf.download('TSLA', start='2014-01-01', end='2024-01-01')
+tesla = yf.download('TSLA', start='2019-01-01', end='2024-01-01')
 
 # Calculate moving averages
 tesla['MA50'] = tesla['Close'].rolling(window=50).mean()
